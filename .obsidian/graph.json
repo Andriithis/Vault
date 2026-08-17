@@ -1,0 +1,100 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "незавершеність",
+      "color": {
+        "a": 1,
+        "rgb": 16755200
+      }
+    },
+    {
+      "query": "джерело-культурне",
+      "color": {
+        "a": 1,
+        "rgb": 16007990
+      }
+    },
+    {
+      "query": "джерело",
+      "color": {
+        "a": 1,
+        "rgb": 5025616
+      }
+    },
+    {
+      "query": "дурість",
+      "color": {
+        "a": 1,
+        "rgb": 11829175
+      }
+    },
+    {
+      "query": "поняття",
+      "color": {
+        "a": 1,
+        "rgb": 16766720
+      }
+    },
+    {
+      "query": "спостереження",
+      "color": {
+        "a": 1,
+        "rgb": 65505
+      }
+    },
+    {
+      "query": "нотатки",
+      "color": {
+        "a": 1,
+        "rgb": 16744192
+      }
+    },
+    {
+      "query": "мислення",
+      "color": {
+        "a": 1,
+        "rgb": 16711935
+      }
+    },
+    {
+      "query": "тип: анкер",
+      "color": {
+        "a": 1,
+        "rgb": 16777215
+      }
+    },
+    {
+      "query": "тип: атом-напруга",
+      "color": {
+        "a": 1,
+        "rgb": 16723200
+      }
+    },
+    {
+      "query": "статус: відкрите",
+      "color": {
+        "a": 1,
+        "rgb": 16776960
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": 1.5,
+  "nodeSizeMultiplier": 1.4,
+  "lineSizeMultiplier": 3.5,
+  "collapse-forces": false,
+  "centerStrength": 0.4,
+  "repelStrength": 12,
+  "linkStrength": 0.7,
+  "linkDistance": 180,
+  "scale": 0.65,
+  "close": false
+}
