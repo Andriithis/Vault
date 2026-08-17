@@ -1,0 +1,9 @@
+# Локальний стан інтерфейсу Obsidian — свій на кожному пристрої
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Кеш і сміття
+.obsidian/cache
+.trash/
+.DS_Store
+Thumbs.db
