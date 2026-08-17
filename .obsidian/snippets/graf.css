@@ -1,0 +1,239 @@
+/* ============================================
+   ГРАФ · власна тема
+   Темна основа, високий контраст, e-ink friendly
+   ============================================ */
+
+/* ---------- 1. ОСНОВА ---------- */
+
+.theme-dark {
+  --background-primary: #16181c;
+  --background-primary-alt: #1b1e23;
+  --background-secondary: #101216;
+  --background-secondary-alt: #0c0e11;
+  --background-modifier-border: #2c3138;
+  --background-modifier-hover: #22262d;
+
+  --text-normal: #e6e6e3;
+  --text-muted: #9aa0a8;
+  --text-faint: #6b727b;
+  --text-accent: #e8833a;
+  --text-accent-hover: #ff9b52;
+  --text-selection: rgba(232, 131, 58, 0.24);
+
+  --interactive-accent: #e8833a;
+  --h1-color: #f2f2ef;
+  --h2-color: #e8833a;
+  --h3-color: #c9cdd3;
+}
+
+/* ---------- 2. ЧИТАННЯ ---------- */
+
+.markdown-preview-view,
+.markdown-source-view.mod-cm6 .cm-content {
+  font-size: 1.02em;
+  line-height: 1.72;
+  max-width: 46rem;
+  margin: 0 auto;
+  letter-spacing: 0.005em;
+}
+
+.markdown-preview-view p {
+  margin-block: 1.05em;
+  text-align: left;
+}
+
+/* Заголовок ноти = теза. Робимо його вагомим. */
+.markdown-preview-view h1,
+.markdown-source-view.mod-cm6 .HyperMD-header-1 {
+  font-size: 1.85em;
+  font-weight: 600;
+  line-height: 1.24;
+  letter-spacing: -0.015em;
+  margin-block: 0.2em 0.9em;
+  padding-bottom: 0.45em;
+  border-bottom: 2px solid var(--background-modifier-border);
+}
+
+/* Однорядкова теза курсивом одразу після H1 — як епіграф */
+.markdown-preview-view h1 + p em,
+.markdown-preview-view h1 + p > em:only-child {
+  display: block;
+  font-style: italic;
+  font-size: 1.12em;
+  line-height: 1.62;
+  color: var(--text-accent);
+  border-left: 3px solid var(--text-accent);
+  padding: 0.35em 0 0.35em 1.1em;
+  margin-block: 0.2em 1.6em;
+}
+
+.markdown-preview-view h2 {
+  font-size: 1.06em;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--h2-color);
+  margin-block: 2.4em 0.8em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* ---------- 3. БЛОК ЗВʼЯЗКІВ ---------- */
+
+/* Типи звʼязків записані в `коді` — робимо їх помітними мітками */
+.markdown-preview-view li code,
+.markdown-source-view.mod-cm6 .cm-inline-code {
+  background: rgba(232, 131, 58, 0.13);
+  color: var(--text-accent);
+  border: 1px solid rgba(232, 131, 58, 0.3);
+  border-radius: 4px;
+  padding: 0.08em 0.45em;
+  font-size: 0.85em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.markdown-preview-view ul {
+  padding-left: 1.15em;
+}
+
+.markdown-preview-view li {
+  margin-block: 0.5em;
+  line-height: 1.62;
+}
+
+.markdown-preview-view li::marker {
+  color: var(--text-faint);
+}
+
+/* ---------- 4. ПОСИЛАННЯ МІЖ НОТАМИ ---------- */
+
+.markdown-preview-view a.internal-link {
+  color: var(--text-normal);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(232, 131, 58, 0.45);
+  padding-bottom: 1px;
+  transition: all 0.12s ease;
+}
+
+.markdown-preview-view a.internal-link:hover {
+  color: var(--text-accent-hover);
+  border-bottom-color: var(--text-accent-hover);
+  background: rgba(232, 131, 58, 0.08);
+}
+
+/* Ненаписані ноти — позначені дірки, мають виглядати інакше */
+.markdown-preview-view a.internal-link.is-unresolved {
+  color: var(--text-faint);
+  border-bottom: 1px dashed var(--text-faint);
+  opacity: 0.75;
+}
+
+/* ---------- 5. FRONTMATTER ---------- */
+
+.frontmatter-container {
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  border-left: 3px solid var(--text-faint);
+  border-radius: 6px;
+  padding: 0.7em 1em;
+  font-size: 0.82em;
+  opacity: 0.82;
+}
+
+.metadata-container {
+  font-size: 0.86em;
+  opacity: 0.85;
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 0.6em;
+  margin-bottom: 1.4em;
+}
+
+/* ---------- 6. ЦИТАТИ ТА ВИДІЛЕННЯ ---------- */
+
+.markdown-preview-view blockquote {
+  border-left: 3px solid var(--text-faint);
+  background: var(--background-primary-alt);
+  padding: 0.7em 1.1em;
+  margin-inline: 0;
+  border-radius: 0 5px 5px 0;
+  color: var(--text-muted);
+  font-style: normal;
+}
+
+.markdown-preview-view strong {
+  color: #ffffff;
+  font-weight: 640;
+}
+
+.markdown-preview-view hr {
+  border: none;
+  border-top: 1px solid var(--background-modifier-border);
+  margin-block: 2.4em;
+}
+
+/* ---------- 7. ГРАФ ---------- */
+
+.graph-view.color-fill {
+  color: #8d939b;
+}
+.graph-view.color-fill-focused {
+  color: #ffffff;
+}
+.graph-view.color-line {
+  color: #454b54;
+}
+.graph-view.color-text {
+  color: #d8dade;
+}
+.graph-view.color-fill-highlight {
+  color: #e8833a;
+}
+.graph-view.color-line-highlight {
+  color: #e8833a;
+}
+.graph-view.color-fill-unresolved {
+  color: #3a3f47;
+}
+.graph-view.color-arrow {
+  color: #6d747d;
+}
+
+/* Підписи вузлів — крупніші й читабельніші */
+.workspace-leaf-content[data-type="graph"] .graph-view-container text,
+.workspace-leaf-content[data-type="localgraph"] .graph-view-container text {
+  font-size: 1.06em;
+  font-weight: 500;
+  paint-order: stroke;
+  stroke: #16181c;
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+
+/* ---------- 8. ІНТЕРФЕЙС ---------- */
+
+.workspace-tab-header.is-active {
+  border-top: 2px solid var(--text-accent);
+}
+
+.nav-file-title.is-active {
+  background: rgba(232, 131, 58, 0.14) !important;
+  border-left: 2px solid var(--text-accent);
+}
+
+.nav-file-title,
+.nav-folder-title {
+  font-size: 0.92em;
+  line-height: 1.42;
+  padding-block: 0.28em;
+}
+
+.workspace-leaf-content[data-type="search"] .search-result-file-title {
+  color: var(--text-accent);
+}
+
+/* Панель беклінків */
+.embedded-backlinks .tree-item-self,
+.backlink-pane .tree-item-self {
+  font-size: 0.9em;
+}
