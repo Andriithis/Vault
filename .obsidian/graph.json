@@ -6,57 +6,7 @@
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": false,
-  "colorGroups": [
-    {
-      "query": "незавершеність",
-      "color": {
-        "a": 1,
-        "rgb": 2115295
-      }
-    },
-    {
-      "query": "джерело",
-      "color": {
-        "a": 1,
-        "rgb": 690433
-      }
-    },
-    {
-      "query": "дурість",
-      "color": {
-        "a": 1,
-        "rgb": 9379532
-      }
-    },
-    {
-      "query": "поняття",
-      "color": {
-        "a": 1,
-        "rgb": 15909133
-      }
-    },
-    {
-      "query": "спостереження",
-      "color": {
-        "a": 1,
-        "rgb": 896498
-      }
-    },
-    {
-      "query": "нотатки",
-      "color": {
-        "a": 1,
-        "rgb": 16027393
-      }
-    },
-    {
-      "query": "мислення",
-      "color": {
-        "a": 1,
-        "rgb": 15368320
-      }
-    }
-  ],
+  "colorGroups": [],
   "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": 0,
