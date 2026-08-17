@@ -1,12 +1,62 @@
 {
-  "collapse-filter": true,
+  "collapse-filter": false,
   "search": "",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
-  "colorGroups": [],
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "незавершеність",
+      "color": {
+        "a": 1,
+        "rgb": 2115295
+      }
+    },
+    {
+      "query": "джерело",
+      "color": {
+        "a": 1,
+        "rgb": 690433
+      }
+    },
+    {
+      "query": "дурість",
+      "color": {
+        "a": 1,
+        "rgb": 9379532
+      }
+    },
+    {
+      "query": "поняття",
+      "color": {
+        "a": 1,
+        "rgb": 15909133
+      }
+    },
+    {
+      "query": "спостереження",
+      "color": {
+        "a": 1,
+        "rgb": 896498
+      }
+    },
+    {
+      "query": "нотатки",
+      "color": {
+        "a": 1,
+        "rgb": 16027393
+      }
+    },
+    {
+      "query": "мислення",
+      "color": {
+        "a": 1,
+        "rgb": 15368320
+      }
+    }
+  ],
   "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": 0,
@@ -17,6 +67,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.7132754626224417,
+  "scale": 0.8854989543150341,
   "close": true
 }
